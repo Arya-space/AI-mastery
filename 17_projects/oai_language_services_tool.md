@@ -1,8 +1,8 @@
-# OAI Language Services Tool
+#  Language Services Tool
 
 ## What Is This Project?
 
-A production Azure-powered NLP application built for UNDP's **Office of Audit and Investigations (OAI)**. It processes audio recordings, video files, and documents — transcribing speech, refining transcripts, generating Minutes of Meeting, translating content, and performing sentiment analysis.
+A production Azure-powered NLP application built for my internship. It processes audio recordings, video files, and documents — transcribing speech, refining transcripts, generating Minutes of Meeting, translating content, and performing sentiment analysis.
 
 **Stack:** Python · Streamlit · Azure OpenAI · Azure Speech Services · Azure AI Language · Azure Translator · Azure Blob Storage
 
