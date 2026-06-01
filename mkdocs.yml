@@ -167,3 +167,6 @@ nav:
     - When to Use Which: 16_ai_architectures/when_to_use_which.md
     - End-to-End System Design: 16_ai_architectures/end_to_end_system_design.md
     - Agentic Patterns: 16_ai_architectures/agentic_patterns.md
+  - 17 - Projects:
+    - OAI Intake & Assessment Tool: 17_projects/oai_intake_assessment_tool.md
+    - OAI Language Services Tool: 17_projects/oai_language_services_tool.md
