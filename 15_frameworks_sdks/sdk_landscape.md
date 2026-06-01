@@ -1,4 +1,4 @@
-# SDK Landscape
+# SDK Landscape Software Development Kit.
 
 The AI engineering ecosystem has many SDKs. Know which layer each belongs to.
 
