@@ -3,7 +3,7 @@ site_description: Study notes for AI Engineering — LLMs, RAG, Agents, MCP, and
 site_author: Arya
 repo_url: https://github.com/Arya-space/AI-mastery
 repo_name: Arya-space/AI-mastery
-docs_dir: .
+docs_dir: docs
 
 theme:
   name: material
