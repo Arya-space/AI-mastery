@@ -29,7 +29,7 @@ jobs:
                 04_llm_apis_backend 05_embeddings_semantic_search 06_rag 07_tool_calling \
                 08_mcp 09_agents 10_evaluations 11_memory_context \
                 12_finetuning_vs_rag_vs_prompting 13_safety_guardrails \
-                14_production_deployment docs/
+                14_production_deployment 15_frameworks_sdks 16_ai_architectures docs/
           cp index.md docs/
 
       - name: Deploy to GitHub Pages

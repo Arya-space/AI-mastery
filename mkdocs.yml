@@ -155,3 +155,15 @@ nav:
     - Cost Tracking: 14_production_deployment/cost_tracking.md
     - Latency: 14_production_deployment/latency.md
     - Production Checklist: 14_production_deployment/production_checklist.md
+  - 15 - Frameworks + SDKs:
+    - SDK Landscape: 15_frameworks_sdks/sdk_landscape.md
+    - LangChain: 15_frameworks_sdks/langchain.md
+    - LangGraph: 15_frameworks_sdks/langgraph.md
+    - LlamaIndex: 15_frameworks_sdks/llamaindex.md
+    - OpenAI Agents SDK: 15_frameworks_sdks/openai_agents_sdk.md
+    - Anthropic SDK: 15_frameworks_sdks/anthropic_sdk.md
+  - 16 - AI Architectures:
+    - Architecture Patterns: 16_ai_architectures/architecture_patterns.md
+    - When to Use Which: 16_ai_architectures/when_to_use_which.md
+    - End-to-End System Design: 16_ai_architectures/end_to_end_system_design.md
+    - Agentic Patterns: 16_ai_architectures/agentic_patterns.md
