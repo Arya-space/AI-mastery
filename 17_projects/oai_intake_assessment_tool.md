@@ -1,8 +1,8 @@
-# OAI Intake & Assessment Tool
+#  Intake & Assessment Tool
 
 ## What Is This Project?
 
-A production RAG application built for UNDP's **Office of Audit and Investigations (OAI)**. It uses AI to screen and assess misconduct complaints, replacing manual document review with structured LLM-generated reports.
+A production RAG application built for my internship . It uses AI to screen and assess misconduct complaints, replacing manual document review with structured LLM-generated reports.
 
 **Stack:** Python · Streamlit · Azure OpenAI · Azure AI Search · Azure Blob Storage
 
