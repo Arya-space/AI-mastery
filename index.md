@@ -29,82 +29,19 @@ It is written for someone who learns by building. Theory is included where it ma
 
 This is the full pipeline of a production AI system. Every module in this repo maps to one or more layers here.
 
-```
-User Input
-   |
-   v
-Input Validation / Safety Filter
-   |
-   v
-Prompt Template (system prompt + context + user input)
-   |
-   v
-LLM / Agent
-   |
-   v
-Tools / APIs / Database / RAG / MCP Server
-   |
-   v
-Output Validation / Safety Filter
-   |
-   v
-Evaluation (automated or human)
-   |
-   v
-Logging + Monitoring
-   |
-   v
-Final Response to User
-```
+![AI Engineer System Map](assets/images/LLM_application.png)
 
 ---
 
 ## RAG System Map
 
-```
-Documents (PDF, HTML, DB, etc.)
-   |
-   v
-Document Parsing
-   |
-   v
-Chunking (fixed, semantic, recursive)
-   |
-   v
-Embedding Model
-   |
-   v
-Vector Database (FAISS, Chroma, pgvector, Pinecone...)
-   |
-   v
-Retriever (top-k semantic search or hybrid)
-   |
-   v
-Reranker (optional cross-encoder)
-   |
-   v
-LLM (receives context + query)
-   |
-   v
-Grounded Answer with Citations
-```
+![RAG System Map](assets/images/RAG.png)
 
 ---
 
 ## MCP System Map
 
-```
-AI Application / Agent
-   |
-   v
-MCP Client (built into the app/agent)
-   |
-   v
-MCP Server (standalone process)
-   |
-   v
-Tool / Database / File System / External API / Workflow
-```
+![MCP System Map](assets/images/MCP.png)
 
 MCP standardizes how AI apps connect to external capabilities. One MCP server can serve multiple clients. See [08_mcp/](08_mcp/what_is_mcp.md).
 
@@ -112,27 +49,7 @@ MCP standardizes how AI apps connect to external capabilities. One MCP server ca
 
 ## Agent Loop Map
 
-```
-User Request
-   |
-   v
-Agent Instructions (system prompt + tools list)
-   |
-   v
-Model Decides Next Step
-   |
-   v
-Tool Call (function call, MCP tool, code execution...)
-   |
-   v
-Tool Result returned to model
-   |
-   v
-Model Reasons Over Result
-   |
-   v
-Final Answer  OR  Next Action (loop continues)
-```
+![Agent Loop Map](assets/images/Agent_tool.png)
 
 ---
 

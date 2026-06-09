@@ -3,7 +3,7 @@ site_description: Study notes for AI Engineering — LLMs, RAG, Agents, MCP, and
 site_author: Arya
 repo_url: https://github.com/Arya-space/AI-mastery
 repo_name: Arya-space/AI-mastery
-docs_dir: docs
+docs_dir: .
 
 theme:
   name: material
@@ -52,121 +52,140 @@ nav:
     - Learning Plan: 00_roadmap/learning_plan.md
     - Glossary: 00_roadmap/glossary.md
     - Sources: 00_roadmap/source_list.md
+    - Project Log: 00_roadmap/project_log.md
+
   - 01 - LLM Basics:
     - AI vs ML vs Deep Learning: 01_ai_llm_basics/ai_vs_ml_vs_deep_learning.md
     - What Is an LLM: 01_ai_llm_basics/what_is_an_llm.md
+    - Transformers: 01_ai_llm_basics/transformers_high_level.md
     - Tokens: 01_ai_llm_basics/tokens.md
-    - Context Window: 01_ai_llm_basics/context_window.md
-    - Embeddings Intro: 01_ai_llm_basics/embeddings_intro.md
-    - Transformers High Level: 01_ai_llm_basics/transformers_high_level.md
-  - 02 - Prompt Engineering:
-    - Prompt Basics: 02_prompt_engineering/prompt_basics.md
-    - Role / Task / Context / Format: 02_prompt_engineering/role_task_context_format.md
-    - Few-Shot Prompting: 02_prompt_engineering/few_shot_prompting.md
-    - Prompt Templates: 02_prompt_engineering/prompt_templates.md
-    - Prompt Iteration: 02_prompt_engineering/prompt_iteration.md
-    - Prompt Failure Modes: 02_prompt_engineering/prompt_failure_modes.md
-    - Prompt Examples: 02_prompt_engineering/prompt_examples.md
-  - 03 - Structured Outputs:
-    - Why Structured Outputs: 03_structured_outputs/why_structured_outputs.md
-    - JSON Outputs: 03_structured_outputs/json_outputs.md
-    - Schemas: 03_structured_outputs/schemas.md
-    - Pydantic Validation: 03_structured_outputs/pydantic_validation.md
-    - Extraction Tasks: 03_structured_outputs/extraction_tasks.md
-  - 04 - LLM APIs + Backend:
-    - OpenAI API: 04_llm_apis_backend/openai_api_basics.md
-    - Claude API: 04_llm_apis_backend/claude_api_basics.md
-    - FastAPI Basics: 04_llm_apis_backend/fastapi_basics.md
-    - Environment Variables: 04_llm_apis_backend/environment_variables.md
-    - API Error Handling: 04_llm_apis_backend/api_error_handling.md
-    - Logging AI Requests: 04_llm_apis_backend/logging_ai_requests.md
-  - 05 - Embeddings + Search:
-    - What Are Embeddings: 05_embeddings_semantic_search/what_are_embeddings.md
-    - Cosine Similarity: 05_embeddings_semantic_search/cosine_similarity.md
-    - Vector Databases: 05_embeddings_semantic_search/vector_databases.md
-    - Keyword vs Semantic Search: 05_embeddings_semantic_search/keyword_vs_semantic_search.md
-    - Hybrid Search: 05_embeddings_semantic_search/hybrid_search.md
-  - 06 - RAG:
-    - What Is RAG: 06_rag/what_is_rag.md
-    - RAG Architecture: 06_rag/rag_architecture.md
-    - Document Loading: 06_rag/document_loading.md
-    - Chunking: 06_rag/chunking.md
-    - Retrieval: 06_rag/retrieval.md
-    - Reranking: 06_rag/reranking.md
-    - Grounded Generation: 06_rag/grounded_generation.md
-    - Citations: 06_rag/citations.md
-    - RAG Failure Modes: 06_rag/rag_failure_modes.md
-  - 07 - Tool Calling:
-    - What Is Tool Calling: 07_tool_calling/what_is_tool_calling.md
-    - Function Schemas: 07_tool_calling/function_schemas.md
-    - Read vs Write Tools: 07_tool_calling/read_tools_vs_write_tools.md
-    - Tool Safety: 07_tool_calling/tool_safety.md
-    - Human Approval: 07_tool_calling/human_approval.md
-  - 08 - MCP:
-    - What Is MCP: 08_mcp/what_is_mcp.md
-    - Why MCP Exists: 08_mcp/why_mcp_exists.md
-    - MCP Architecture: 08_mcp/mcp_architecture.md
-    - Client / Server / Host: 08_mcp/mcp_client_server_host.md
-    - Tools / Resources / Prompts: 08_mcp/mcp_tools_resources_prompts.md
-    - MCP vs Tool Calling: 08_mcp/mcp_vs_tool_calling.md
-    - MCP vs API: 08_mcp/mcp_vs_api.md
-    - MCP Security: 08_mcp/mcp_security.md
-    - Building an MCP Server: 08_mcp/building_mcp_server.md
-  - 09 - Agents:
-    - What Is an Agent: 09_agents/what_is_an_agent.md
-    - Agent Loop: 09_agents/agent_loop.md
-    - Agent vs Workflow: 09_agents/agent_vs_workflow.md
-    - Agent Types: 09_agents/agent_types.md
-    - Handoffs: 09_agents/handoffs.md
-    - Guardrails for Agents: 09_agents/guardrails_for_agents.md
-    - Tracing: 09_agents/tracing.md
-  - 10 - Evaluations:
-    - Why Evals Matter: 10_evaluations/why_evals_matter.md
-    - Eval Dataset: 10_evaluations/eval_dataset.md
-    - Prompt Evals: 10_evaluations/prompt_evals.md
-    - RAG Evals: 10_evaluations/rag_evals.md
-    - Agent Evals: 10_evaluations/agent_evals.md
-    - Structured Output Evals: 10_evaluations/structured_output_evals.md
-    - Human Evaluation: 10_evaluations/human_evaluation.md
-  - 11 - Memory + Context:
-    - Short-Term Memory: 11_memory_context/short_term_memory.md
-    - Long-Term Memory: 11_memory_context/long_term_memory.md
-    - Conversation State: 11_memory_context/conversation_state.md
-    - Context Window Management: 11_memory_context/context_window_management.md
-  - 12 - Prompting vs RAG vs Fine-tuning:
-    - Prompting vs RAG: 12_finetuning_vs_rag_vs_prompting/prompting_vs_rag.md
-    - RAG vs Fine-tuning: 12_finetuning_vs_rag_vs_prompting/rag_vs_finetuning.md
-    - When to Fine-tune: 12_finetuning_vs_rag_vs_prompting/when_to_finetune.md
-    - Decision Table: 12_finetuning_vs_rag_vs_prompting/decision_table.md
-    - Case Studies: 12_finetuning_vs_rag_vs_prompting/case_studies.md
-  - 13 - Safety + Guardrails:
-    - Hallucination: 13_safety_guardrails/hallucination.md
-    - Prompt Injection: 13_safety_guardrails/prompt_injection.md
-    - Data Leakage: 13_safety_guardrails/data_leakage.md
-    - Unsafe Tool Calls: 13_safety_guardrails/unsafe_tool_calls.md
-    - Input Guardrails: 13_safety_guardrails/input_guardrails.md
-    - Output Guardrails: 13_safety_guardrails/output_guardrails.md
-    - Safety Checklist: 13_safety_guardrails/safety_checklist.md
-  - 14 - Production:
-    - Docker Basics: 14_production_deployment/docker_basics.md
-    - CI/CD: 14_production_deployment/ci_cd.md
-    - Deployment Architecture: 14_production_deployment/deployment_architecture.md
-    - Monitoring: 14_production_deployment/monitoring.md
-    - Cost Tracking: 14_production_deployment/cost_tracking.md
-    - Latency: 14_production_deployment/latency.md
-    - Production Checklist: 14_production_deployment/production_checklist.md
-  - 15 - Frameworks + SDKs:
-    - SDK Landscape: 15_frameworks_sdks/sdk_landscape.md
-    - LangChain: 15_frameworks_sdks/langchain.md
-    - LangGraph: 15_frameworks_sdks/langgraph.md
-    - LlamaIndex: 15_frameworks_sdks/llamaindex.md
-    - OpenAI Agents SDK: 15_frameworks_sdks/openai_agents_sdk.md
-    - Anthropic SDK: 15_frameworks_sdks/anthropic_sdk.md
+
+  - 02 - LLM APIs:
+    - How LLM APIs Work: 02_llm_apis/how_llm_apis_work.md
+    - OpenAI API: 02_llm_apis/openai_api_basics.md
+    - Claude API: 02_llm_apis/claude_api_basics.md
+    - Environment Variables: 02_llm_apis/environment_variables.md
+
+  - 03 - Memory + Context:
+    - Context Window: 03_memory_context/context_window.md
+    - Short-Term Memory: 03_memory_context/short_term_memory.md
+    - Long-Term Memory: 03_memory_context/long_term_memory.md
+    - Conversation State: 03_memory_context/conversation_state.md
+    - Context Window Management: 03_memory_context/context_window_management.md
+
+  - 04 - Prompt Engineering:
+    - Prompt Basics: 04_prompt_engineering/prompt_basics.md
+    - Role / Task / Context / Format: 04_prompt_engineering/role_task_context_format.md
+    - Few-Shot Prompting: 04_prompt_engineering/few_shot_prompting.md
+    - Prompt Templates: 04_prompt_engineering/prompt_templates.md
+    - Prompt Iteration: 04_prompt_engineering/prompt_iteration.md
+    - Prompt Failure Modes: 04_prompt_engineering/prompt_failure_modes.md
+    - Prompt Examples: 04_prompt_engineering/prompt_examples.md
+
+  - 05 - Structured Outputs:
+    - Why Structured Outputs: 05_structured_outputs/why_structured_outputs.md
+    - JSON Outputs: 05_structured_outputs/json_outputs.md
+    - Schemas: 05_structured_outputs/schemas.md
+    - Pydantic Validation: 05_structured_outputs/pydantic_validation.md
+    - Extraction Tasks: 05_structured_outputs/extraction_tasks.md
+
+  - 06 - Embeddings + Search:
+    - What Are Embeddings: 06_embeddings_search/what_are_embeddings.md
+    - Embeddings Intro: 06_embeddings_search/embeddings_intro.md
+    - Cosine Similarity: 06_embeddings_search/cosine_similarity.md
+    - Vector Databases: 06_embeddings_search/vector_databases.md
+    - Keyword vs Semantic Search: 06_embeddings_search/keyword_vs_semantic_search.md
+    - Hybrid Search: 06_embeddings_search/hybrid_search.md
+
+  - 07 - RAG:
+    - What Is RAG: 07_rag/what_is_rag.md
+    - RAG Architecture: 07_rag/rag_architecture.md
+    - Document Loading: 07_rag/document_loading.md
+    - Chunking: 07_rag/chunking.md
+    - Retrieval: 07_rag/retrieval.md
+    - Reranking: 07_rag/reranking.md
+    - Grounded Generation: 07_rag/grounded_generation.md
+    - Citations: 07_rag/citations.md
+    - RAG Failure Modes: 07_rag/rag_failure_modes.md
+
+  - 08 - Tool Calling:
+    - What Is Tool Calling: 08_tool_calling/what_is_tool_calling.md
+    - Function Schemas: 08_tool_calling/function_schemas.md
+    - Read vs Write Tools: 08_tool_calling/read_tools_vs_write_tools.md
+    - Tool Safety: 08_tool_calling/tool_safety.md
+    - Human Approval: 08_tool_calling/human_approval.md
+
+  - 09 - MCP:
+    - What Is MCP: 09_mcp/what_is_mcp.md
+    - Why MCP Exists: 09_mcp/why_mcp_exists.md
+    - MCP Architecture: 09_mcp/mcp_architecture.md
+    - Client / Server / Host: 09_mcp/mcp_client_server_host.md
+    - Tools / Resources / Prompts: 09_mcp/mcp_tools_resources_prompts.md
+    - MCP vs Tool Calling: 09_mcp/mcp_vs_tool_calling.md
+    - MCP vs API: 09_mcp/mcp_vs_api.md
+    - MCP Security: 09_mcp/mcp_security.md
+    - Building an MCP Server: 09_mcp/building_mcp_server.md
+
+  - 10 - Agents:
+    - What Is an Agent: 10_agents/what_is_an_agent.md
+    - Agent Loop: 10_agents/agent_loop.md
+    - Agent vs Workflow: 10_agents/agent_vs_workflow.md
+    - Agent Types: 10_agents/agent_types.md
+    - Handoffs: 10_agents/handoffs.md
+    - Guardrails for Agents: 10_agents/guardrails_for_agents.md
+    - Tracing: 10_agents/tracing.md
+
+  - 11 - Evaluations:
+    - Why Evals Matter: 11_evaluations/why_evals_matter.md
+    - Eval Dataset: 11_evaluations/eval_dataset.md
+    - Prompt Evals: 11_evaluations/prompt_evals.md
+    - RAG Evals: 11_evaluations/rag_evals.md
+    - Agent Evals: 11_evaluations/agent_evals.md
+    - Structured Output Evals: 11_evaluations/structured_output_evals.md
+    - Human Evaluation: 11_evaluations/human_evaluation.md
+
+  - 12 - Safety + Guardrails:
+    - Hallucination: 12_safety_guardrails/hallucination.md
+    - Prompt Injection: 12_safety_guardrails/prompt_injection.md
+    - Data Leakage: 12_safety_guardrails/data_leakage.md
+    - Unsafe Tool Calls: 12_safety_guardrails/unsafe_tool_calls.md
+    - Input Guardrails: 12_safety_guardrails/input_guardrails.md
+    - Output Guardrails: 12_safety_guardrails/output_guardrails.md
+    - Safety Checklist: 12_safety_guardrails/safety_checklist.md
+
+  - 13 - Prompting vs RAG vs Fine-tuning:
+    - Prompting vs RAG: 13_finetuning_vs_rag_vs_prompting/prompting_vs_rag.md
+    - RAG vs Fine-tuning: 13_finetuning_vs_rag_vs_prompting/rag_vs_finetuning.md
+    - When to Fine-tune: 13_finetuning_vs_rag_vs_prompting/when_to_finetune.md
+    - Decision Table: 13_finetuning_vs_rag_vs_prompting/decision_table.md
+    - Case Studies: 13_finetuning_vs_rag_vs_prompting/case_studies.md
+
+  - 14 - Frameworks + SDKs:
+    - SDK Landscape: 14_frameworks_sdks/sdk_landscape.md
+    - LangChain: 14_frameworks_sdks/langchain.md
+    - LangGraph: 14_frameworks_sdks/langgraph.md
+    - LlamaIndex: 14_frameworks_sdks/llamaindex.md
+    - OpenAI Agents SDK: 14_frameworks_sdks/openai_agents_sdk.md
+    - Anthropic SDK: 14_frameworks_sdks/anthropic_sdk.md
+
+  - 15 - Production:
+    - FastAPI Basics: 02_llm_apis/fastapi_basics.md
+    - Docker Basics: 15_production/docker_basics.md
+    - CI/CD: 15_production/ci_cd.md
+    - Deployment Architecture: 15_production/deployment_architecture.md
+    - API Error Handling: 02_llm_apis/api_error_handling.md
+    - Logging AI Requests: 02_llm_apis/logging_ai_requests.md
+    - Monitoring: 15_production/monitoring.md
+    - Cost Tracking: 15_production/cost_tracking.md
+    - Latency: 15_production/latency.md
+    - Production Checklist: 15_production/production_checklist.md
+
   - 16 - AI Architectures:
     - Architecture Patterns: 16_ai_architectures/architecture_patterns.md
     - When to Use Which: 16_ai_architectures/when_to_use_which.md
     - End-to-End System Design: 16_ai_architectures/end_to_end_system_design.md
     - Agentic Patterns: 16_ai_architectures/agentic_patterns.md
+
   - 17 - Projects:
     - OAI Intake & Assessment Tool: 17_projects/oai_intake_assessment_tool.md
     - OAI Language Services Tool: 17_projects/oai_language_services_tool.md

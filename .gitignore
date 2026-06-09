@@ -1,0 +1,35 @@
+# API Keys & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*_key.json
+service_account*.json
+
+# Jupyter Notebooks — outputs can contain API responses / keys
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# MkDocs build output
+site/
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# GCP credentials
+application_default_credentials.json
+gcloud/
