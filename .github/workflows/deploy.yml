@@ -22,16 +22,18 @@ jobs:
       - name: Install MkDocs
         run: pip install "mkdocs-material>=9.0,<10.0"
 
-      - name: Prepare docs folder
+      - name: Prepare content folder
         run: |
-          mkdir -p docs
-          cp -r 00_roadmap 01_ai_llm_basics 02_prompt_engineering 03_structured_outputs \
-                04_llm_apis_backend 05_embeddings_semantic_search 06_rag 07_tool_calling \
-                08_mcp 09_agents 10_evaluations 11_memory_context \
-                12_finetuning_vs_rag_vs_prompting 13_safety_guardrails \
-                14_production_deployment 15_frameworks_sdks 16_ai_architectures \
-                17_projects docs/
-          cp index.md docs/
+          mkdir -p content
+          for dir in 00_roadmap 01_ai_llm_basics 02_llm_apis 03_memory_context \
+                     04_prompt_engineering 05_structured_outputs 06_embeddings_search \
+                     07_rag 08_tool_calling 09_mcp 10_agents 11_evaluations \
+                     12_safety_guardrails 13_finetuning_vs_rag_vs_prompting \
+                     14_frameworks_sdks 15_production 16_ai_architectures 17_projects \
+                     assets resources; do
+            [ -d "$dir" ] && cp -r "$dir" content/
+          done
+          cp index.md content/
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
